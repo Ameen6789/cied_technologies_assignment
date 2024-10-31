@@ -1,7 +1,8 @@
 # Ciedassignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
-##To run the porject 
+
+## To run the porject 
 ```
 npm install
 ng serve -o
