@@ -1,0 +1,240 @@
+<body>   
+    <div class="main-container d-flex">
+        
+        <nav class="min-vh-100   position-fixed  h-100 bg-white" id="navbar">
+            <div class="d-flex flex-column h-100">
+                <div class="mt-4 mt-lg-5">
+                    <div class="d-flex ">
+                        <h1 class="mb-4  ps-4 pe-5 fw-semibold text-light-black">Budget</h1>
+                        <img src="assets/images/close.png" class="close-button ms-3 mt-2" id="close-button" alt="" width="35px" height="35px" (click)="closeNavbar()">
+                    </div>
+                    
+                    <ul class="nav w-100">
+                        <li class="nav-item w-100">
+                            
+                            <a href="dashboard" class="py-2 w-100  fw-medium text-light-black text-decoration-none fw-semibold d-flex align-items-center justifty-content-center">
+                                <div class="menu-selected">
+                                
+                                </div>
+                                <img src="assets/images/grid.svg" class="ms-4 me-3 fw-semibold " alt=""> Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="d-flex h-100 align-items-end mb-3 mt-auto w-100">
+                    <div class="flex-column w-100 px-3">
+                        <div class="d-flex align-items-center justifty-content-center me-5 user-container p-1 rounded-pill w-100">
+                            <div  class="rounded-circle me-3 user-image-div">
+                                
+                            </div>
+                            
+                            <div>
+                                <p class="fw-semibold mb-0 text-light-black">Catherine</p>
+                                <p style="font-size: 13px;" class="mb-0 text-light-gray">+91 9876543210</p>
+                            </div>
+                        </div>
+        
+                        <div class=" mt-4 ps-2"> 
+                            <a href="" class="d-flex align-items-center justifty-content-center text-decoration-none">
+                                <img src="assets/images/logout-icon.svg" alt="" width="14px" height="14px" class="ms-4 me-2">
+                                <p class="mb-0 text-light-gray" >Log Out</p>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </nav>
+        
+        <div class="dashboard-container w-100 mb-5 pe-4">
+            
+            <div class="mt-4">
+                <div class="d-flex w-100 align-items-center justifty-content-between top-nav">
+                    <h2 class="mb-2 pt-2 fw-semibold text-light-black">Dashboard</h2>
+                    <img src="assets/images/icons-hamburger.svg" alt="" width="35px" height="35px" class="ms-auto d-block d-lg-none navbar-button me-5  me-lg-0" (click)="showNavbar()">
+                </div>
+                
+                <p  class="mb-3 text-light-gray mt-5 pt-5 mt-lg-0 pt-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                
+                <div class="d-flex">
+                    <div class="d-flex align-items-center border border-1  p-0 rounded-pill p-1" style="border-color: #EAEAEA;">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center me-3 " style="background-color: #FF831A;width: 34px;height: 34px;" >
+                            
+                            <img src="assets/images/i.png" alt="" width="12px" height="20px" class="p-0">
+
+                        </div>
+                        <p class="mb-0 me-3 text-light-black">You Have <span class="fw-semibold me-3">32 Support Request Pending for Response</span><a href="dashboard" class="text-light-black fw-semibold">View</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="mt-4 w-100">
+                <div class="row gx-4 gy-4 w-100">
+                    <div class="col-12  col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card bg-primary p-4 rounded-3 text-white border-0 w-auto">
+                            <p class="fs-6 fw-light mb-0">Total Users</p>
+                            <p class="fs-4 fw-medium my-2">1,567</p>
+                            <div class="d-flex align-items-center justifty-content-center">
+                                <div class="rounded-pill p-1 px-2 bg-white d-flex align-items-center justifty-content-center  me-2">
+                                    <p class=" text-black mb-0 fw-medium" style="font-size: 13px;">2.36%</p>
+                                    <img src="assets/images/arrow-up-short.svg" alt="" width="19px" height="19px">
+                                </div>
+                                
+                                <p class="fs-6 fw-light mb-0">Since last month</p></div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-sm-6 col-md-6 col-lg-4  col-xl-3">
+                        <div class="card p-4 rounded-3 text-white border-0 w-auto" style="background-color: #4A9C88;">
+                            <p class="fs-6 fw-light mb-0">Total Users</p>
+                            <p class="fs-4 fw-medium my-2">1,500</p>
+                            <div class="d-flex align-items-center justifty-content-center">
+                                <div class="rounded-pill p-1 px-2 bg-white d-flex align-items-center justifty-content-center  me-2">
+                                    <p class=" text-black mb-0 fw-medium" style="font-size: 13px;">2.36%</p>
+                                    <img src="assets/images/arrow-up-short.svg" alt="" width="19px" height="19px">
+                                </div>
+                                
+                                <p class="fs-6 fw-light mb-0">Since last month</p></div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-sm-6 col-md-6 col-lg-4  col-xl-3">
+                        <div class="card bg-primary p-4 rounded-3 text-white border-0 w-auto">
+                            <p class="fs-6 fw-light mb-0">Total Users</p>
+                            <p class="fs-4 fw-medium my-2">1,500</p>
+                            <div class="d-flex align-items-center justifty-content-center">
+                                <div class="rounded-pill p-1 px-2 bg-white d-flex align-items-center justifty-content-center  me-2">
+                                    <p class="text-black mb-0 fw-medium" style="font-size: 13px;">2.36%</p>
+                                    <img src="assets/images/arrow-up-short.svg" alt="" width="19px" height="19px">
+                                </div>
+                                
+                                <p class="fs-6 fw-light mb-0">Since last month</p></div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card  p-4 rounded-3 text-white border-0 w-auto" style="background-color: #4A9C88;">
+                            <p class="fs-6 fw-light mb-0">Total Users</p>
+                            <p class="fs-4 fw-medium my-2">1,500</p>
+                            <div class="d-flex align-items-center justifty-content-center">
+                                <div class="rounded-pill p-1 px-2 bg-white d-flex align-items-center justifty-content-center  me-2">
+                                    <p class="text-black mb-0 fw-medium" style="font-size: 13px;">2.36%</p>
+                                    <img src="assets/images/arrow-up-short.svg" alt="" width="19px" height="19px">
+                                </div>
+                                
+                                <p class="fs-6 fw-light mb-0">Since last month</p></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <h2 class="my-4 fw-semibold text-light-black">Recently Active Users</h2>
+            <div class="table-container w-100">
+                <table class="w-100 " style="font-size: 15px;">
+                    <thead >
+                        <tr class="table-secondary border-0  text-light-gray" >
+                            <th class="border-0 rounded-start p-3  text-light-gray" >USERID/NAME</th>
+                            <th class="border-0 p-3 text-light-gray" >PHONE NUMBER</th>
+                            <th class="border-0 p-3 text-light-gray" >TRANSACTION CATEGORY</th>
+                            <th class="border-0 p-3 text-light-gray" >TRANSACTION AMOUNT</th>
+                            <th class="border-0 p-3 text-light-gray" >ACCOUNT TYPE</th>
+                            <th class="border-0 p-3 text-light-gray" >BALANCE AMOUNT</th>
+                            <th class="border-0 p-3 rounded-end"><p class="mb-0 px-5"> </p></th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3">
+                                <p class="fw-semibold mb-0 text-light-black">Monicca James</p>
+                                <p class="mb-0 text-light-gray" >ID 123456789</p>
+                            </td>
+                            <td class="p-3 text-light-black">+91 9876543210</td>
+                            <td class="p-3">
+                                <p class="mb-0 text-light-black">Income</p>
+                                <p class="mb-0 text-light-gray" >Salary</p>
+                            </td>
+                            <td class="fw-semibold p-3 text-light-black">$200</td>
+                            <td class="p-3 text-light-black">Savings</td>
+                            <td class="fw-semibold p-3 text-light-black">$6000</td>
+                            <td class="p-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <p class="fw-semibold mb-0 text-light-black">Samantha</p>
+                                <p class="mb-0 text-light-gray" >ID 123456789</p>
+                            </td>
+                            <td class="p-3 text-light-black">+91 9876543210</td>
+                            <td class="p-3">
+                                <p class="mb-0 text-light-black">Income</p>
+                                <p class="mb-0 text-light-gray" >Salary</p>
+                            </td>
+                            <td class="fw-semibold p-3 text-light-black">$200</td>
+                            <td class="p-3 text-light-black">Savings</td>
+                            <td class="fw-semibold p-3 text-light-black">$6000</td>
+                            <td class="vertical-align-center fw-semibold "><a href="dashboard" class="text-light-black">View</a></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <p class="fw-semibold mb-0 text-light-black">Caterine</p>
+                                <p class="mb-0 text-light-gray" >ID 123456789</p>
+                            </td>
+                            <td class="p-3 text-light-black">+91 9876543210</td>
+                            <td class="p-3">
+                                <p class="mb-0 text-light-black">Income</p>
+                                <p class="mb-0 text-light-gray" >Salary</p>
+                            </td>
+                            <td class="fw-semibold p-3 text-light-black">$200</td>
+                            <td class="p-3 text-light-black">Savings</td>
+                            <td class="fw-semibold p-3 text-light-black">$6000</td>
+                            <td class="p-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <p class="fw-semibold mb-0 text-light-black">Monica James</p>
+                                <p class="mb-0 text-light-gray" >ID 123456789</p>
+                            </td>
+                            <td class="p-3 text-light-black">+91 9876543210</td>
+                            <td class="p-3">
+                                <p class="mb-0 text-light-black">Income</p>
+                                <p class="mb-0 text-light-gray" >Salary</p>
+                            </td>
+                            <td class="fw-semibold p-3 text-light-black">$200</td>
+                            <td class="p-3 text-light-black">Savings</td>
+                            <td class="fw-semibold p-3 text-light-black">$6000</td>
+                            <td class="p-3"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <p class="fw-semibold mb-0 text-light-black">Ileana Sam</p>
+                                <p class="mb-0 text-light-gray" >ID 123456789</p>
+                            </td>
+                            <td class="p-3 text-light-black">+91 9876543210</td>
+                            <td class="p-3">
+                                <p class="mb-0 text-light-black">Income</p>
+                                <p class="mb-0 text-light-gray" >Salary</p>
+                            </td>
+                            <td class="fw-semibold p-3 text-light-black">$200</td>
+                            <td class="p-3 text-light-black">Savings</td>
+                            <td class="fw-semibold p-3 text-light-black">$6000</td>
+                            <td class="p-3"></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            
+            <div class="d-flex align-items-center justify-content-center w-100 mt-3">
+                
+                <button class="btn rounded-pill border border-1 border-black text-center text-light-black">View All</button>
+                
+                
+            </div>
+        </div>
+    </div>
+
+</body> 
+
+

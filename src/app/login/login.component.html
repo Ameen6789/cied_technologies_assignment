@@ -1,0 +1,69 @@
+
+
+<body >
+    <div class="main-container d-flex flex-column flex-lg-row  h-100 ">
+        <div class="left-container d-flex align-items-center justifty-content-center position-relative">
+           <h2 class="position-absolute fw-semibold budget text-black">Budget</h2>
+        </div>
+        
+
+        <div class="right-container d-flex  flex-column align-items-center justifty-content-center">
+            <div class="d-flex w-100 justifty-content-center">
+                <div class="ms-auto d-flex w-auto align-items-center mt-3 me-3 pt-2 pe-2">
+                    <p class="mb-0 me-1"><a href="" class="text-decoration-none text-black">Having Trouble?</a></p>
+                    <h6 class="me-2 mb-0"><a href="" class="text-decoration-none text-black fw-semibold">Get Help</a></h6>
+                    <div class="custom-dropdown fw-semibold ">
+                        <button class="dropdown-btn w-100 btn btn-white border border-2 border-black fw-semibold px-2 py-1" (click)="showDropDown($event)">
+                          <img src="assets/images/flag.png" width="20px" height="16px" class="me-2"><span id="option-text" class="mb-0 me-2 text-black">Eng</span>
+                          <svg class="ms-1" style="width:16px;height:16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        </button>
+                        <ul class="dropdown-content shadow-medium w-100 p-0 m-0 list-style-type-none list-group">
+                          <li (click)="selectOption($event)" class="w-100 px-3 m-0 py-2 list-group-item"><img src="assets/images/flag.png" width="20px" height="16px" class="me-2"><span id="option-text" class="mb-0 text-black">Eng</span></li>
+                          <li (click)="selectOption($event)" class="w-100 px-3 m-0 py-2 list-group-item"><img src="assets/images/flag.png" width="20px" height="16px" class="me-2"><span id="option-text" class="mb-0 text-black">Fra</span></li>
+                          <li (click)="selectOption($event)" class="w-100 px-3 m-0 py-2 list-group-item"><img src="assets/images/flag.png" width="20px" height="16px" class="me-2"><span id="option-text" class="mb-0 text-black">Ger</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="login-container h-100 d-flex align-items-center w-100">
+                <div class="d-flex  flex-column align-items-center justifty-content-center w-100">
+                    <div class="mb-4 w-100">
+                        <h4 class="fw-semibold text-light-black" >Login to Budget</h4>
+                        <p class="text-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    
+                    <div class="d-flex flex-column w-100">
+                        <div class="rounded-top input-container-email p-3 position-relative" tabindex="0">
+                            <input type="email" placeholder="Email" class="border-0 form-control p-2 fs-5 text-black" (focus)="styleEmailField($event)" (focusout)="restyleEmailField($event)">
+                            <p id="email-text" class="mb-0 position-absolute email-text text-light-gray">Email</p>
+                        </div>
+                        <div class="rounded-bottom  input-container-password mb-2  p-3" tabindex="0">
+                            
+                            <div class="d-flex align-items-center position-relative">
+                                <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" class="border-0  form-control p-2 mt-0 fs-5 text-black" id="password-input"(focus)="stylePasswordField($event)" (focusout)="restylePasswordField($event)">
+                                <p class="mb-0 me-3" id="show-password" (click)="togglePasswordVisbility()">{{ showPassword ? 'Hide' : 'Show' }}</p>
+                                <p id="password-text" class="mb-0 position-absolute position-absolute password-text text-light-gray">Password</p>
+                            </div>
+                            
+                        </div>
+                        <div class="d-flex w-100 justifty-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" class="me-2 "> <p class="mb-0 text-black">keep me logged in</p>
+                            </div>
+                            <p class="ms-auto mb-0"><a href="" class="text-decoration-none text-black">Forgot Password?</a> </p>
+                        </div>
+                        <a href="dashboard">
+                            <button class="btn  w-100 py-3 mb-2 text-white" style="background-color: #005EFF;">Login</button>
+                        </a>
+                        
+                        <p class="text-center"><a href="" class="text-decoration-none text-black">Create New Account?</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</body>
